@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekrar</title>
+</head>
+<body>
+    <!--Not: Kod uzerine basıldıgında MDN references denilerek özellikleri gorebilirim-->
+<h3 id="upper">Yukari kisim</h3> <!--id <>icine yazılır-->
+
+<a href="iskelet_index.html"><span style="color: rgb(171, 206, 44);">Blog Donmek Icin Tiklayiniz!</span></a>
+
+<h2>Linkler ile Calismak</h2>
+<!--
+    - Sayfa icerisinde bulunabilir(asagi in veya yukarı cık gibi butonlar)
+    - Baska sayfaya gitmek icin kullanılabililer
+    - Baska web site yonlendirebilir
+    - Mail gonderme icin kullanılabilir
+    - Telefon etme icin kullanılabilir
+-->
+<!--Linkler a ile baslatılır href icerisine gidilecek link adres kopyalanır
+aradaki bosluk icine tıklanacak cumle atanır 
+bosluk oncesi eger target="_blank" denirse bu yan sayfa acar denilmez ise yeni sayfa acar direkt-->
+<ul>  <!--teker teker a, link acmak yerine liste olusturdum ve icine yazdım-->
+    <li>
+        <a href="https://www.instagram.com/oncelarif33/" target="_blank">  
+            Bana ulasmak icin tikla!
+        </a>
+    </li>
+    <br>   <!-- br bosluk yaratır-->
+    <li>   
+        <a href="iletisim.html">   <!--iletisim adında yeni html belirttim ve adresi yazdım buraya-->
+            Iletisim sayfasi icin tikla! <!--İletisim ile alakalı siteye yönlendirir-->
+        </a>    
+    </li>
+    <br>
+    <li>
+        <a href="#footer"> <!--En alt olusturdugum kısma gitmemi saglar sitede-->
+            En alt baslik gitmek icin tikla! <!--id ile olusturdugum icin asagıda #ile belirtilmeli-->
+        </a>                <!--# oraya git demektir-->
+    </li>
+    <br>
+    <li>
+        <a href="mailto:colooktay@hotmail.com"> <!--mail atmak icin mailto:ile mail yazılır-->
+            Mail atmak icin tiklayiniz...
+        </a>
+    </li>
+    <br>
+    <li>
+        <a href="tel:+905376882401">     <!--numara icin tel:numara denir-->
+            Telefon aramak icin tiklayiniz...
+        </a>
+    </li>
+    <br>
+    <li>
+       <a href="https://picsum.photos/200/300" target="_blank"> <!--href site yazıldı resim adres-->
+        Image sayfa gitmek icin tiklayiniz...   <!--image acıklaması yapıldı ekstra olarak-->
+        <br>                                    <!--alta siteden herhangi bir fotograf konuldu-->
+        <img src="https://picsum.photos/200" alt=""> <!--basılarakta siteye gidilebilir-->
+       </a>
+        <!--photos/100/100 bu sayı degerlerini degistirerek genislik uzunluk degerleri atayabilirim-->
+    </li>
+</ul>
+
+
+
+<hr>
+<br>
+
+
+
+<!-- açıklamalar bu şekilde yapılır--> 
+<h2>HTML</h2>                       <!-- Baslıklar(h) alt alta sıralandıkca font kuculur-->
+<h3>Aciklama ve paragraflar</h3>
+
+
+
+
+<p>cumle ve pragraflarim 1 ss</p>
+<p>cumle ve paragraflarim 2 bayrama gel</p>
+<p>cumle ve paragramlarim 3 neyse</p>
+
+<h3>paragraf devami</h3>
+<p>sadede gel son</p>
+<p>son paragraf ve cumle</p>
+
+<h2>CSS</h2>
+<h2>bootstrap</h2>
+
+<h4>Listeler:</h4>
+
+<ol>            <!--ol listesi bize direkt rakamlı sıralı liste verir-->
+    <li>ilk liste ogesi</li> <!--liste icerisinde li belirtilerek icine index ataması olur-->
+    <li>ikinci liste ogesi</li>
+    <li>ucuncu liste ogesi</li>
+</ol>   <!--sonrasında ol kapatılır aynı sekilde her li icinde kapanma lazım-->
+
+<ul>    <!-- ul noktalı sırasız liste gosterimidir-->
+    <li>ilk liste </li>
+    <li>ikinci liste</li>
+    <li>ucuncu liste</li>
+</ul>
+
+<h4>Liste Icinde Liste Ornek:</h4> <!--baslık eklemesi yapıldı-->
+<ol>  
+    <li>ilk liste</li>
+    <li>liste ici ikinci liste       <!-- sıralı liste olusturdum ve altına -->
+        <ul>                        <!--ul ile sırasız liste tekrardan olusturdum-->
+            <li>ilk</li>
+            <li>ikinci</li>
+            <li>ucuncu</li>
+        </ul>
+    </li>
+    <li>ucuncu list</li>
+</ol>
+
+
+<!--Kısaltmalar ve ozellikler:
++: ogeleri alt alta yazar kısa bir sekilde h1+p gibi
+>: oge acar ve icine yeni bir oge yazma islemi yapar kısaca ol+li gibi
+^: iceri girilen ogeden dısarı cıkmayi saglar ol>li^p (dısarı cıktı ve p yazdı)
+*: verilen oge istenilen kadar carpma islemi yapar p*3 gibi
+lorem: bu latince kelimeler verir
+lorem4: 4 adet latince kelime verdi
+class: ogeler ile class yapısı olusturur  h3.deneme gibi
+id: id olusturur  h3#deneme gibi
+-->
+
+<!--Kısaltma Ornekler:
+- ul>li*3
+- h3+p*3+h2+p*2
+- ul>li*3^p*2+h3  
+(liste actım 3 adet sıra ekledim cıkıs yaptım ve 2 paragraf+h3 baslık ekledim)
+- ul>li*3>lorem1^^p*2>lorem4^h3>lorem1
+(ul ici listelere lorem ekledim liste icindeki cumleye lorem ekledigim için 2 defa cıkmam
+gerekti sonrasında paragraf actım 2 tane ve icine girdim lorem yazdım
+cıktım baslık lorem yazdırdım)
+h3.deneme>lorem1 (baslık actım deneme adında class olusturdum icine lorem yazdırdım)
+h3#deneme>lorem1 (baslık actım deneme adında id olusturdum icine lorem yazdırdım)
+ul>li.deneme*3>lorem1 (ul liste actım 3 adetli class olusturdum ve icerisine lorem atadım)
+-->
+
+<hr>
+
+<h2>Gorseller ile Calismak</h2>   
+<!--img terimi kullanılır, img yazdıktan sonra 
+tab veya enter dediğimde kullanacagım argumanlar cıkar
+img yerine kullanacagım adresler alt kısmına img acıklaması yazılır-->
+
+<img src="images/1.jpeg" alt="bag bayır cayır">  
+
+<!--pc yukleyecegım image proje icersinde 
+dosya olarak kaydetmis olmam lazım sol taraftaki araç takımında gozukmeli
+images dosya oldugu icin belirtilip adı tam sekilde yazılmalı-->
+
+<img src="https://picsum.photos/200/300" alt="lorem images"> 
+
+<!--lorem images google arattım
+link kopyaladım ve aktardım ve acıklamasını verdim, her seferinde farklı bir image verir-->
+
+<img width="300" height="300" src="https://assets.ubuntu.com/v1/ca395a32-Embedded+Linux+-+white.svg" alt="ubuntu">            
+ <!--burada sitedeki resim sol tık yaptık resim adresi kopyalayıp 
+yapıstırma islemi yaptım-->
+<!--!!width ve height manuel olarak boyut vermemi saglar!!-->
+
+<br>
+<br>
+<br>
+<br>
+
+<h2 id="footer" >En Alt Kisim</h2>   <!--Yukarıdaki asagı in linki icin id belirtmem gerekiyor
+footer alt bilgi demektir-->
+
+<p>Lorem, ipsum dolor.</p>
+<p>Dolor, minima possimus!</p>   <!--formalite paragraf bilgi cumleleri-->
+<p>Nesciunt, quaerat hic.</p>
+
+<br>
+<hr>
+
+
+<h3>Div ve span farki</h3>
+<!--
+    div, kullanımı belli yapı cumle paragraf her seyi bir blok içerisinde birlestirmektir.
+    span, kullanımı belli bir yapı üzerinde islem ve ozellik ile islem yapmaktır.
+-->
+<p>
+    Lorem <strong>ipsum dolor sit</strong>, <em>amet consectetur</em> adipisicing elit.
+</p>   
+<!--strong yazı tipini daha kalın yapar, em farklı bir yazı tipidir.-->
+
+<hr>  <!--hr sayfayı ayırmak icin cizgi ceker-->
+
+<p> 
+    <div>
+    Lorem ipsum dolor sit amet consectetur.  <!--burada mesela lorem div icine aldım boylelikle-->
+    </div>                                  <!--bu kısım aslında bir blok icine alınmıs oldu-->
+    Magni architecto id laborum omnis minus.  <!--lorem cumlesi sag tık incele denirse ayrı bir-->
+    <span style="color:rgb(5, 94, 79)"> Hic eum laborum itaque tempore</span> nihil? <!--blok olarak gozukur-->
+</p>  <!--span seffaf bir alan yaratır icindeki cumleye ve bu alana biz istedigimiz ozellikleri-->
+        <!--verebiliriz burada color sadece bir ornektir-->
+
+<p>
+    <strong>
+        <em>Lorem, ipsum dolor.</em>  
+    </strong>   <!--hem yazı tipini degistirdim hem kalınlastırdım boylelikle-->
+</p>
+
+<strong>        <!--Yukarı kısım üstte id ile belirttim-->
+<a href="#upper">  <!--href # ile cagırdım-->
+    <span style="color: rgb(76, 116, 247)">Yukari cikmak icin tikla!</span> 
+</a>        <!--yazi red yaptim ve kalınlastırdım-->
+</strong>
+</body>
+</html>
